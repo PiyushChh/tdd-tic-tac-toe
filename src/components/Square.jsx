@@ -1,14 +1,9 @@
-import { useState } from "react";
-
 function Square({value,handleClick}){
-    
-
-    
     return(
         <>
-        <button className="square" onClick={handleClick}
+        <button className="square" onClick={handleClick} data-testid="square"
         >
-            {value}
+        {value}
         </button>
         </>
     )
